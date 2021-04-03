@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #4361ee;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    .header {
+        background-color: #4361ee;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header__img {
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .header__img {
+        margin-right: 30px;
+    }
+    
+    .header__menu {
+        margin-right: 10px;
+        width: 100px;
+    }
+    
+    .header__menu li a:hover {
+        text-decoration: underline;
+    }
+    
+    .header__menu--profile {
+        display: flex;
+        justify-content: center;
+        margin-right: 8px;
+        width: 40px;
+        align-items: center;
+    }
+    
+    .header__menu--profile img {
+        margin-right: 5px;
+        width: 90px;
+        align-items: center;
+    }
+    
+    .header__menu--profile p {
+        color: #fff;
+        margin: 0;
+        display: block;
+    }
+    
+    .header__menu:hover ul,
+    ul:hover {
+        display: block;
+    }
+    
+    .header__menu ul {
+        display: none;
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0 0 0 -14px;
+    }
+    
+    .header__menu li {
+        margin: 10px 0px;
+    }
+    
+    .header__menu li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .container__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: calc(100vh - 180px);
+        color: #fff;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.3);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .container__main h2 {
+        margin: 0px;
+        font-size: 120px;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    .container__main p {
+        padding: 0px 10px;
+    }
+    
+    .footer {
+        background-color: #4361ee;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+    
+    .footer a {
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="./assets/icono-platzi-video.png" alt="icono de navbar">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="./assets/user.png" alt="usuario">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container__main">
+        <h2>404</h2>
+        <p>Página no encontrada</p>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaracion de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+
+</body>
+
+</html>
