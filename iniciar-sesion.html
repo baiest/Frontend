@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #4361ee;
+        font-family: 'Mulish', sans-serif;
+    }
+    
+    .header {
+        background-color: #4361ee;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header__img {
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .header__img {
+        margin-right: 30px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <img class="header__img" src="./icono-platzi-video.png" alt="icono de navbar">
+    </header>
+    <section class="login">
+        <section class="login__container">
+            <h2>Inicia sesión</h2>
+            <form class="login__container--form">
+                <input class="input" type="text" placeholder="Correo">
+                <input class="input" type="text" placeholder="Contraseña">
+                <button class="button">Iniciar sesión</button>
+                <div class="login__container--remember-me">
+                    <label>
+                        <input type="checkbox" name="" id="box1" value="checkbox">Recuerdame
+                    </label>
+                    <a href="/">Olvidé mi Contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div><img src="./google-icon.png" alt="Google">Inicia sesión con Google</div>
+                <div><img src="./twitter-icon.png" alt="Twiter">Inicia sesión con Twiter</div>
+            </section>
+            <p class="login__container--register">No tienes ninguna cuenta <a href="/">Registrate</a></p>
+        </section>
+        <footer class="footer">
+            <a href="/">Términos de uso</a>
+            <a href="/">Declaracion de privacidad</a>
+            <a href="/">Centro de ayuda</a>
+        </footer>
+    </section>
+</body>
+
+</html>
