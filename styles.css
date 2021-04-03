@@ -164,3 +164,20 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        padding: 0px;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer a {
+        margin-bottom: 10px;
+    }
+}
