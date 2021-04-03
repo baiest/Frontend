@@ -92,10 +92,9 @@ ul:hover {
 .categories__title {
     margin-top: 30px;
     color: #fff;
-    font-size: 16px;
+    font-size: 25px;
     position: absolute;
     padding-left: 30px;
-    width: 100%;
 }
 
 .input {
@@ -115,10 +114,28 @@ ul:hover {
 }
 
 .carousel {
-    width: 80%;
+    width: 100%;
     overflow-x: scroll;
     padding: 80px 0px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(40, 148, 219);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: white;
 }
 
 .carousel__container {
@@ -176,6 +193,9 @@ ul:hover {
     right: 0;
     bottom: 0;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .carousel-item__details:hover {
